@@ -251,7 +251,7 @@ if not resultOfComparison:
 # batch calculation
 lib.set_input_dir(localPath + 'test/genomes')
 lib.set_n_threads(3)
-lib.batch_process_query(localPath + 'test/genomes/genome_list.txt')
+lib.batch_process_query(localPath + 'test/genome_list.txt')
 resultOfComparison = compare_json_files('test/GCF_000146045.2_R64_genomic.json','test/GCF_000146045.2_R64_genomic_expected.json')
 if not resultOfComparison:
     raise Exception(f'Test6 failed: results of batch_process_query do not agree with the expectation for GCF_000146045.2_R64_genomic.')

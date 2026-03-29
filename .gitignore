@@ -13,10 +13,13 @@
 
 *.so
 
-test/genomes/
+test/genomes/*
 test/*.csv
 test/families.txt
 !examples/*.py
+examples/ref/*
+examples/genomes/*
+examples/results/*
 
 .venv/
 

@@ -44,6 +44,7 @@ To process queries run:
 
 ```
 mkdir results
+wget -P genomes/ https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/146/045/GCF_000146045.2_R64/GCF_000146045.2_R64_genomic.fna.gz
 python3 process_query.py
 ```
 

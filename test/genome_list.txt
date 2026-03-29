@@ -1,0 +1,3 @@
+GCF_000146045.2_R64_genomic.fna.gz
+GCF_000182965.3_ASM18296v3_genomic.fna.gz
+GCA_001661245.1_Pacta1_2_genomic.fna.gz
