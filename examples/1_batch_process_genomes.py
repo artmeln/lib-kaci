@@ -2,14 +2,14 @@ import os
 from datetime import datetime
 import sys
 sys.path.append("../../lib-kaci/")
-from  src.libcodonprob_wrapper import LibCodonProb
+from  src.libkaci_wrapper import LibKaci
 
 #standardTT = "FFLLSSSSYY**CC*WLLLLPPPPHHQQRRRRIIIMTTTTNNKKSSRRVVVVAAAADDEEGGGG"
 standardTT = "FFLLSSSSYYAGCCSWLLLLPPPPHHQQRRRRIIIMTTTTNNKKSSRRVVVVAAAADDEEGGGG"
 
 localPath = os.path.dirname(os.path.abspath(__file__)) + '/'
-libPath = localPath+'../lib-kaci/src/libkaci.so'
-lib = LibCodonProb(libPath)
+libPath = localPath+'../src/libkaci.so'
+lib = LibKaci(libPath)
 
 nThreads = 7
 klen = 11

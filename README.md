@@ -29,6 +29,7 @@ pip install -r requirements.txt
 ```
 cd src
 make libkaci
+cd ..
 ```
 
 # Getting started
@@ -48,7 +49,7 @@ wget -P genomes/ https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/146/045/GCF_00
 python3 process_query.py
 ```
 
-This will produce typical KACI output files for several genomes located in **test** directory.
+This will produce typical KACI output files for the downloaded genome in **results** directory.
 
 You should look at these examples to familarize yourself with the inputs that control KACI. 
 
@@ -112,25 +113,33 @@ Artem V Melnykov. "New genetic codes in bacteria and archaea identified with a f
 
 If you want to reproduce results from this paper, follow these steps:
 
-1. Make sure you are running on a machine with at least 16 GB of available memory.
+1. Make sure you are running on a machine with at least 16 GB of available memory and at least 30 GB hard drive.
 
 2. Build the library as described above.
 
-3. Download the [reference](https://zenodo.org/records/19318166), unzip it and place into `examples/ref/`:
+3. Make sure that your `examples` directory has the following structure
+```
+examples/
+ ├── genomes/
+ ├── ref/
+ └── results/
+```
+
+4. Download the [reference](https://zenodo.org/records/19318166), unzip it and place into `examples/ref/`:
 ```
 cd examples
-wget -P ref/ https://zenodo.org/records/19318166/files/ref_k11_link20.tar.gz?download=1
-tar -xvzf ref/ref_k11_link20.tar.gz ref/ref_k11_link20/
+wget -P ref/ https://zenodo.org/records/19318166/files/ref_k11_link20.tar.gz
+tar -xvzf ref/ref_k11_link20.tar.gz -C ref/
 ```
 
-4. Download genomes of interest and place them into `examples/genomes/` (you don't have to unzip them).
+5. Download genomes of interest and place them into `examples/genomes/` (you don't have to unzip them).
 
-5. To process all files located in `examples/genomes/` use `1_batch_process_genomes.py`. You may want to edit this file and change the number of threads to be used.
+6. To process all files located in `examples/genomes/` use `1_batch_process_genomes.py` (you may want to edit this file and change the number of threads to be used). There will be an initial delay of a couple of minutes while the reference is being loaded, after that you should start seeing output files as they are written to the hard drive. 
 ```
 python3 1_batch_process_genomes.py
 ```
 
-6. To extract the inferrences:
+7. To extract the inferrences for all files located in `examples/results` and save them as `summary_genomic.csv` run:
 ```
 python3 2_evaluate_results.py
 ```
