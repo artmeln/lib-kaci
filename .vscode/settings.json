@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "khashl.h": "c",
+        "pthread.h": "c",
+        "kseq.h": "c",
+        "math.h": "c",
+        "kaci.h": "c",
+        "zlib.h": "c"
+    }
+}

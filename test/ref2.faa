@@ -1,0 +1,32 @@
+>prot1;fam1;protein description
+IKLM
+>prot2;fam1;protein description
+IKLN
+>prot3;fam1;protein description
+IKLM
+>prot4;fam1;protein description
+WKLM
+>prot1;fam2;protein description
+ACCE
+>prot2;fam2;protein description
+ACCE
+>prot3;fam2;protein description
+CFFF
+>prot4;fam2;protein description
+CFFF
+>prot1;fam3;protein description
+RSTV
+>prot2;fam3;protein description
+RSTV
+>prot3;fam3;protein description
+PKLM
+>prot4;fam3;protein description
+PKLM
+>prot1;fam4;protein description
+YWTS
+>prot2;fam4;protein description
+TSDW
+>prot3;fam4;protein description
+ACCE
+>prot1;fam5;protein description
+ACCE
