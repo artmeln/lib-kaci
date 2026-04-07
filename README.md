@@ -109,7 +109,7 @@ In addition, it utilizes a C implementation of [logaddexp](https://github.com/ho
 
 # Citation
 
-Artem V Melnykov. "New genetic codes in bacteria and archaea identified with a fast k-mer based algorithm".
+Artem V Melnykov. "New genetic codes in bacteria and archaea identified with a fast k-mer based algorithm" [(preprint)](https://www.biorxiv.org/cgi/content/short/2026.04.02.715157v1)
 
 If you want to reproduce results from this paper, follow these steps:
 
